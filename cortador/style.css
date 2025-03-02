@@ -2,12 +2,32 @@ body {
     /* background-color: #f8f9fa; */
     margin: 0;
     padding: 0;
+     
+    
+}
+
+button {
+    color: #fff;
+    padding: 8px 22px;
+    background-color: #1E1F7C;
+    transition: all 0.2s ease;
+    border-radius: 6px; 
+}
+button:hover {
+    transition-duration: 0.5s;
+    background-color: rgb(18, 0, 107);
+}
+button:active{
+    transform: scale(0.96);
+}
+
+
+.frontIndex{
     display: flex; 
     justify-content: center; 
     align-items: center;
     height: 100vh;
-    flex-direction: column; 
-    
+    flex-direction: column;
 }
 .headerIndex{
     display: grid;
@@ -44,21 +64,126 @@ body {
 .selectAreaIndex a{
     text-decoration: none;
 }
-.selectAreaIndex button {
+
+
+.novoCad{
+    margin-left: 15px;
+}
+
+
+/* //////////////////////////////////////////////// */
+
+.headerCadastro{
+    gap: 4em;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.headerCadastro img{
+    width: 200px;
+    
+}
+.contentCadastro{
+    font-family: "JBS Display", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    display: flex; 
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.partEsquerda{
+    width: 75%;
+    background-color: #fff;
+    padding: 15px;
+}
+.partDireita {
+    justify-content: end;
+    justify-items: end;
+    width: 25%;
+    background-color: #1E1F7C;
+    border-top-left-radius: 50px;
+    /* border-bottom-right-radius: 50px; */
+    border-bottom-left-radius: 50px;
+}
+.partDireita img{
+    width: 200px;
+    z-index: 2;
+}
+
+.formsArea {
+    
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 10);
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    /* background-color: #e9ecef; */
+
+
+}
+#submitCadastro{
     color: #fff;
     padding: 8px 22px;
     background-color: #1E1F7C;
     transition: all 0.2s ease;
     border-radius: 6px;
 }
-.selectAreaIndex button:hover {
+#submitCadastro:hover {
     transition-duration: 0.5s;
     background-color: rgb(18, 0, 107);
 }
-.novoCad{
-    margin-left: 15px;
-}
-
-.selectAreaIndex button:active{
+#submitCadastro:active{
     transform: scale(0.96);
 }
+/* //////////////////////////////////////////////////// */
+.frontConsulta {
+    display: flex ;
+    flex-direction: column;
+}
+.headerConsulta{
+    gap: 4em;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.headerConsulta img {
+    width: 200px
+}
+
+.contentConsulta {
+    margin-top: 25px;
+    padding: 10px;
+    font-family: "JBS Display", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    display: flex; 
+    justify-content: center;
+    width:auto;
+    
+}
+
+.listaAreaConsulta{
+    display: inline-block;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 10);
+}
+
+.registerConsulta{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.registerConsulta th, .registerConsulta td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#dscServ{
+    width: 200px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+
