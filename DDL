@@ -1,0 +1,14 @@
+drop database if exists projetocortador;
+create database projetocortador;
+use projetocortador;
+
+create table cortadores (
+    snAntigo varchar(100) not null,
+    datRetirada date not null,
+    snNovo varchar(100) not null,
+    datInstalacao date not null,
+    impressora varchar(100) not null,
+    descService varchar(100000) not null,
+    obs varchar(100000) not null,
+    analista varchar(100) not null
+);
